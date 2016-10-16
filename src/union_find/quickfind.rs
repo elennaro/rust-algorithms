@@ -4,6 +4,7 @@ use union_find::unionfind::*;
 pub struct QuickFind {
     id: Vec<usize>
 }
+
 ///
 /// Quick Find implementation of union find task.
 ///
