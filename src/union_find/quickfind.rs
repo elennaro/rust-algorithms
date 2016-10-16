@@ -18,10 +18,10 @@ impl UnionFind for QuickFind {
             }
         }
     }
-    fn connected(&self, p: usize, q: usize) -> bool {
+    fn connected(&mut self, p: usize, q: usize) -> bool {
         return self.id[p] == self.id[q];
     }
-    fn find(&self, p: usize) -> usize {
+    fn find(&mut self, p: usize) -> usize {
         return self.id[p] as usize;
     }
 }
